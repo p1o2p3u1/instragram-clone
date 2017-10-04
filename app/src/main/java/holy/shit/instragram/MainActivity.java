@@ -5,8 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void renderView(){
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
         SectionsPagerAdapter pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(new HomeFragment());
         pagerAdapter.addFragment(new SearchFragment());
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                Log.d(TAG, "onPageScrolled: ");
             }
 
             @Override
