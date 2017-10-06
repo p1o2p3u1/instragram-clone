@@ -13,9 +13,14 @@ public class LikeFragment extends Fragment {
 
     private static final String TAG = "LikeFragment";
 
+    private View view;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_like, container, false);
+        if(view == null){
+            view = inflater.inflate(R.layout.fragment_like, container, false);
+        }
+        return view;
     }
 }

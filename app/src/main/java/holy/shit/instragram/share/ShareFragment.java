@@ -13,9 +13,14 @@ public class ShareFragment extends Fragment {
 
     private static final String TAG = "ShareFragment";
 
+    private View view;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_share, container, false);
+        if(view == null){
+            view = inflater.inflate(R.layout.fragment_search, container, false);
+        }
+        return view;
     }
 }
