@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         pagerAdapter.addFragment(new ShareFragment());
         pagerAdapter.addFragment(new LikeFragment());
         pagerAdapter.addFragment(new ProfileFragment());
-        viewPager = (ViewPager) findViewById(R.id.fragments_viewpager);
-        bottomNavigationView = (BottomNavigationViewEx) findViewById(R.id.bottomNavViewBar);
+        viewPager = findViewById(R.id.fragments_viewpager);
+        bottomNavigationView = findViewById(R.id.bottomNavViewBar);
         viewPager.setAdapter(pagerAdapter);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
