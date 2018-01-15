@@ -1,4 +1,4 @@
-package holy.shit.instragram.search;
+package holy.shit.instragram.ui.profile;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 
 import holy.shit.instragram.R;
 
-public class SearchFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    private static final String TAG = "SearchFragment";
+    private static final String TAG = "ProfileFragment";
 
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        if(view == null){
-            view = inflater.inflate(R.layout.fragment_search, container, false);
-        }
+        if(view != null) return  view;
+        view = inflater.inflate(R.layout.fragment_profile, container, false);
         return view;
     }
+
 }

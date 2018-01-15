@@ -1,4 +1,4 @@
-package holy.shit.instragram.share;
+package holy.shit.instragram.ui.search;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -9,18 +9,17 @@ import android.view.ViewGroup;
 
 import holy.shit.instragram.R;
 
-public class ShareFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
-    private static final String TAG = "ShareFragment";
+    private static final String TAG = "SearchFragment";
 
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        if(view == null){
-            view = inflater.inflate(R.layout.fragment_search, container, false);
-        }
+        if(view != null) return view;
+        view = inflater.inflate(R.layout.fragment_search, container, false);
         return view;
     }
 }

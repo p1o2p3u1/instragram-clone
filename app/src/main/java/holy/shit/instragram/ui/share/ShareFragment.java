@@ -1,4 +1,4 @@
-package holy.shit.instragram.like;
+package holy.shit.instragram.ui.share;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 
 import holy.shit.instragram.R;
 
-public class LikeFragment extends Fragment {
+public class ShareFragment extends Fragment {
 
-    private static final String TAG = "LikeFragment";
+    private static final String TAG = "ShareFragment";
 
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        if(view == null){
-            view = inflater.inflate(R.layout.fragment_like, container, false);
-        }
+        if(view != null) return view;
+        view = inflater.inflate(R.layout.fragment_search, container, false);
+        
         return view;
     }
 }

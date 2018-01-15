@@ -1,4 +1,4 @@
-package holy.shit.instragram.home;
+package holy.shit.instragram.ui.home;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

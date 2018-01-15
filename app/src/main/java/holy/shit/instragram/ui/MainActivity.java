@@ -1,20 +1,20 @@
-package holy.shit.instragram;
+package holy.shit.instragram.ui;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-import holy.shit.instragram.home.HomeFragment;
-import holy.shit.instragram.like.LikeFragment;
-import holy.shit.instragram.profile.ProfileFragment;
-import holy.shit.instragram.search.SearchFragment;
-import holy.shit.instragram.share.ShareFragment;
+import holy.shit.instragram.R;
+import holy.shit.instragram.ui.home.HomeFragment;
+import holy.shit.instragram.ui.like.LikeFragment;
+import holy.shit.instragram.ui.profile.ProfileFragment;
+import holy.shit.instragram.ui.search.SearchFragment;
+import holy.shit.instragram.ui.share.ShareFragment;
 
 public class MainActivity extends AppCompatActivity {
 
